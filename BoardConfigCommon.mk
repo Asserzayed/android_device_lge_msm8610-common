@@ -24,7 +24,7 @@
 USE_CAMERA_STUB := false
 TARGET_NO_BOOTLOADER := true
 
-TARGET_SPECIFIC_HEADER_PATH += device/lge/msm8610-common/include
+TARGET_SPECIFIC_HEADER_PATH += device/huawei/msm8610-common/include
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
@@ -54,8 +54,7 @@ COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
     -DBOARD_CHARGING_CMDLINE_VALUE='"chargerlogo"'
 
-# Global flags
-COMMON_GLOBAL_CFLAGS += -DLG_CAMERA_HARDWARE
+
 
 # Audio
 AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
@@ -72,7 +71,7 @@ TARGET_QCOM_NO_FM_FIRMWARE := true
 TARGET_NO_RPC := true
 
 # Graphics
-BOARD_EGL_CFG := device/lge/msm8610-common/prebuilt/egl.cfg
+BOARD_EGL_CFG := device/huawei/msm8610-common/prebuilt/egl.cfg
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 USE_OPENGL_RENDERER := true
 TARGET_USES_C2D_COMPOSITION := true
@@ -85,13 +84,13 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # Use qcom power hal
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_USES_CPU_BOOST_HINT := true
-TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/input/lge_touch/dt2w_enable
+#TARGET_TAP_TO_WAKE_NODE := /sys/devices/virtual/input/lge_touch/dt2w_enable
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/lge/msm8610-common/cmhw/
+BOARD_HARDWARE_CLASS := device/huawei/msm8610-common/cmhw/
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/lge/msm8610-common/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/msm8610-common/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -151,7 +150,7 @@ BOARD_RECOVERY_ALWAYS_WIPES := true
 
 # TWRP Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
-TARGET_RECOVERY_FSTAB := device/lge/msm8610-common/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/huawei/msm8610-common/recovery.fstab
 RECOVERY_FSTAB_VERSION := 2
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 #RECOVERY_GRAPHICS_USE_LINELENGTH := true
@@ -179,5 +178,5 @@ TARGET_RECOVERY_QCOM_RTC_FIX := true
 include device/qcom/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
-       device/lge/msm8610-common/sepolicy
+       device/huawei/msm8610-common/sepolicy
 
