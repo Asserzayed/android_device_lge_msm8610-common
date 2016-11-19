@@ -41,14 +41,6 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8610
 
-# Kernel image
-BOARD_KERNEL_SEPARATED_DT := true
-TARGET_KERNEL_SOURCE := kernel/lge/msm8610
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.selinux=permissive user_debug=23 msm_rtb.filter=0x37 androidboot.hardware=msm8610
-BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
-
 # Offmode Charging
 COMMON_GLOBAL_CFLAGS += \
     -DBOARD_CHARGING_CMDLINE_NAME='"androidboot.mode"' \
