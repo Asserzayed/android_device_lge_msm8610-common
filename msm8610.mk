@@ -19,7 +19,7 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/msm8610-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/huawei/msm8610-common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -45,47 +45,47 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
-    device/lge/msm8610-common/prebuilt/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
+    device/huawei/msm8610-common/prebuilt/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    device/lge/msm8610-common/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    device/lge/msm8610-common/prebuilt/etc/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    device/lge/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    device/lge/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
-    device/lge/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
-    device/lge/msm8610-common/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
-    device/lge/msm8610-common/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
-    device/lge/msm8610-common/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
-    device/lge/msm8610-common/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/lge/msm8610-common/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
-    device/lge/msm8610-common/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/msm8610-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/msm8610-common/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/msm8610-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/lge/msm8610-common/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
-    device/lge/msm8610-common/prebuilt/etc/sap.conf:system/etc/sap.conf \
-    device/lge/msm8610-common/prebuilt/etc/gps.conf:system/etc/gps.conf \
-    device/lge/msm8610-common/prebuilt/etc/msap.conf:system/etc/msap.conf \
-    device/lge/msm8610-common/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
-    device/lge/msm8610-common/prebuilt/etc/sec_config:system/etc/sec_config \
-    device/lge/msm8610-common/prebuilt/etc/izat.conf:system/etc/izat.conf \
-    device/lge/msm8610-common/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
-	device/lge/msm8610-common/prebuilt/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh
+    device/huawei/msm8610-common/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/huawei/msm8610-common/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/huawei/msm8610-common/prebuilt/etc/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    device/huawei/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    device/huawei/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    device/huawei/msm8610-common/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv_boot.bin \
+    device/huawei/msm8610-common/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
+    device/huawei/msm8610-common/prebuilt/etc/hostapd/hostapd.deny:system/etc/hostapd/hostapd.deny \
+    device/huawei/msm8610-common/prebuilt/etc/hostapd/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+    device/huawei/msm8610-common/prebuilt/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/huawei/msm8610-common/prebuilt/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    device/huawei/msm8610-common/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
+    device/huawei/msm8610-common/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/huawei/msm8610-common/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/huawei/msm8610-common/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/huawei/msm8610-common/prebuilt/etc/init.crda.sh:system/etc/init.crda.sh \
+    device/huawei/msm8610-common/prebuilt/etc/sap.conf:system/etc/sap.conf \
+    device/huawei/msm8610-common/prebuilt/etc/gps.conf:system/etc/gps.conf \
+    device/huawei/msm8610-common/prebuilt/etc/msap.conf:system/etc/msap.conf \
+    device/huawei/msm8610-common/prebuilt/etc/clatd.conf:system/etc/clatd.conf \
+    device/huawei/msm8610-common/prebuilt/etc/sec_config:system/etc/sec_config \
+    device/huawei/msm8610-common/prebuilt/etc/izat.conf:system/etc/izat.conf \
+    device/huawei/msm8610-common/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
+	device/huawei/msm8610-common/prebuilt/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh
 
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/rootdir/init.msm8610.rc:root/init.msm8610.rc \
-    device/lge/msm8610-common/rootdir/init.msm8610.usb.rc:root/init.msm8610.usb.rc \
-    device/lge/msm8610-common/rootdir/ueventd.msm8610.rc:root/ueventd.msm8610.rc \
-	device/lge/msm8610-common/rootdir/init.qcom.ril.sh:system/etc/init.qcom.ril.sh \
-    device/lge/msm8610-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh 
+    device/huawei/msm8610-common/rootdir/init.msm8610.rc:root/init.msm8610.rc \
+    device/huawei/msm8610-common/rootdir/init.msm8610.usb.rc:root/init.msm8610.usb.rc \
+    device/huawei/msm8610-common/rootdir/ueventd.msm8610.rc:root/ueventd.msm8610.rc \
+	device/huawei/msm8610-common/rootdir/init.qcom.ril.sh:system/etc/init.qcom.ril.sh \
+    device/huawei/msm8610-common/prebuilt/etc/init.zetaw.bt.sh:system/etc/init.zetaw.bt.sh 
 
 # TWRP
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/huawei/msm8610-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -194,7 +194,7 @@ PRODUCT_PACKAGES += \
 
 # EGL config
 PRODUCT_COPY_FILES += \
-    device/lge/msm8610-common/prebuilt/egl.cfg:system/lib/egl/egl.cfg
+    device/huawei/msm8610-common/prebuilt/egl.cfg:system/lib/egl/egl.cfg
 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -275,4 +275,4 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-$(call inherit-product, vendor/lge/msm8610-common/msm8610-vendor.mk)
+$(call inherit-product, vendor/huawei/msm8610-common/msm8610-vendor.mk)
