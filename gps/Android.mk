@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter l70pn l70pds,$(TARGET_DEVICE)),)
+ifneq ($(filter Y625,$(TARGET_DEVICE)),)
 
 LOC_PATH := $(call my-dir)
 
