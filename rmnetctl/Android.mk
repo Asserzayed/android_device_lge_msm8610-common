@@ -1,5 +1,5 @@
 
-ifneq ($(filter w5 w3ds w55ds,$(TARGET_DEVICE)),)
+ifneq ($(filter Y625,$(TARGET_DEVICE)),)
 
 include $(call all-subdir-makefiles)
 
