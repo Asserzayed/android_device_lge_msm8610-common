@@ -1,1 +1,1 @@
-Common device configuration for LGE msm8610 based devices
+Common device configuration for HUAWEI msm8610 based devices
